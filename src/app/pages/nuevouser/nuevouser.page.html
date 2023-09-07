@@ -1,0 +1,77 @@
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="start" name="menu-outline" color="dark"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+            <ion-title size="large" class="custom-title">Registrate</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form class="bordes-formulario">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input type="text" placeholder="ingrese nombre"
+                name="nombre" [(ngModel)]="usuario.nombre"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Rut</ion-label>
+            <ion-input type="text" placeholder="ingrese Rut"
+                name="rut" [(ngModel)]="usuario.rut"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Correo Electronico</ion-label>
+            <ion-input type="email" placeholder="xxxxxxxx@duocuc.cl"
+            name="email" [(ngModel)]="usuario.email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password" placeholder="Largo 8 digitos"
+              name="password" [(ngModel)]="usuario.password"></ion-input>
+            </ion-item>
+
+         
+                <ion-list>
+                  <ion-item>
+                    <ion-select placeholder="Seleccione su area">
+                      <ion-select-option value="ingenieria1">Ingenieria1</ion-select-option>
+                      <ion-select-option value="ingenieria2">Ingenieria2</ion-select-option>
+                      <ion-select-option value="ingenieria3">ingenieria3</ion-select-option>
+                      <ion-select-option value="ingenieria4">ingenieria4</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+          
+          <ion-list>
+            <ion-item>
+              <ion-select placeholder="Seleccione su Sede">
+                <ion-select-option value="sede1">sede 1</ion-select-option>
+                <ion-select-option value="sede2">sede 2</ion-select-option>
+                <ion-select-option value="sede3">sede 3</ion-select-option>
+                <ion-select-option value="sede4">sede 4</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+   
+        </ion-list>
+        <ion-button (click)="Enviar()" expand="block" fill="solid" shape="round">
+          Enviar
+        </ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

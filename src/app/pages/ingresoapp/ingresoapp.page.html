@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"
+      icon="arrow-back-circle-outline"
+      text="Volver"
+       color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-toolbar>
+  <img src="assets/logoassist.jpg" class="logoapp" >
+</ion-toolbar>
+
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-header collapse="condense">
+  
+  </ion-header>
+  <div>
+    <form class="bordes-formulario">
+      <ion-list>
+        <ion-title class="titulo">Login</ion-title>
+        <ion-item>
+          <ion-label position="floating">Ingrese correo Electronico</ion-label>
+          <ion-input type="email" placeholder="xxxxxxxx@duocuc.cl"
+          name="email" [(ngModel)]="usuario.email"></ion-input>
+
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Ingrese Password</ion-label>
+          <ion-input type="Password" placeholder="***********"
+          name="password" [(ngModel)]="usuario.password"></ion-input>
+        </ion-item>
+      </ion-list>
+
+
+      <ion-button (click)="Enviar()" expand="block" fill="solid"  >
+        Enviar
+        
+      </ion-button>
+    
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <p (click)="nuevo()" style="text-decoration: underline; cursor: pointer;">Usuario<br> nuevo</p>
+        </ion-col>
+        <ion-col>
+          <p (click)="olvidacion()" style="text-decoration: underline; cursor: pointer;">Olvidé mi<br> clave</p>
+        </ion-col>
+      </ion-row>
+    </form>
+
+  </div>
+</ion-content>
+

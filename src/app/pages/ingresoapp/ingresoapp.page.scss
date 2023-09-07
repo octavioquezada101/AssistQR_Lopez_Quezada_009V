@@ -1,0 +1,106 @@
+.bordes-formulario {
+    max-width: 280px; 
+    margin: 0 auto; 
+    margin-top: 30px;
+    padding: 20px; 
+    padding-bottom: 50px;
+    border: 4px solid black; 
+    border-radius: 10px;
+    background-color: white;
+
+  }
+  
+  .accion-link {
+    text-decoration: underline;
+    cursor: pointer;
+    
+  }
+  
+  .accion-link + .accion-link {
+    margin-top: 10px;
+  }
+
+  ion-title.titulo {
+    text-align: center;
+    font-size: 24px; 
+    margin-top: 10px; 
+    background-color: black ;
+    color:#f1c40f;
+    border-radius: 20%;
+    padding: 10px;
+
+  }
+
+  ion-item ion-label {
+    color: black; 
+
+}
+
+ion-button {
+  --background: #f1c40f; 
+  --color: #ffffff; 
+
+}
+
+p {
+  color: black; 
+  text-decoration: underline; 
+ 
+}
+
+ion-content {
+  --background: #E1E0DD; 
+
+}
+
+ion-item ion-input {
+  color: black;
+
+}
+
+ion-button {
+  margin-top: 30px; 
+
+}
+
+.titulo{
+  margin:20px;
+
+}
+
+ion-toolbar {
+  display: flex;
+  justify-content: center; 
+
+}
+
+.logoapp {
+  width: 100%; 
+  height: auto; 
+  max-width: 100%; 
+
+}
+
+ion-content ion-title.titulo {
+  margin: 20px; 
+
+}
+
+ion-button {
+  --background:#FFB800;
+  --background-hover:black;
+  --color: white;
+  --border-radius: 20px;
+  --border-color: black;
+  --border-style: solid;
+  --border-width: 1px;
+  --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+
+}
+
+.custom-button {
+  font-size: 15px;
+  font-weight: bold;
+}
